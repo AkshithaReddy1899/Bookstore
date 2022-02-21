@@ -1,0 +1,41 @@
+.App {
+  background-color: #282c34;
+  color: white;
+  min-height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+nav {
+  width: 100vw;
+  height: 40px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.navlist {
+  display: flex;
+  list-style: none;
+}
+
+.navitem {
+  color: wheat;
+  margin: 25px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+  padding-top: 50px;
+}
+
+.book-list {
+  border: 2px solid whitesmoke;
+}
