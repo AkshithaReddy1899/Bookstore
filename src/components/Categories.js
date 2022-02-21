@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Categories = () => (
-  <div style={{color:"red"}}>
+  <div style={{ color: 'red' }}>
     Under construction
   </div>
 );
