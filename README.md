@@ -47,7 +47,7 @@ Codepen [@Akshitha Reddy](https://codepen.io/Akshitha_Reddy)
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page]().
+Feel free to check the [issues page](https://github.com/AkshithaReddy1899/Bookstore/issues).
 
 ## Show your support
 
@@ -57,17 +57,3 @@ Give a ⭐️ if you like this project!
 
 This project is [MIT](./MIT.md) licensed.
 👤 Aksha Reddy
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page]().
-
-## Show your support
-
-Give a ⭐️ if you like this project!
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
