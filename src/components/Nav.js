@@ -21,7 +21,7 @@ const Nav = () => {
     },
   ];
   return (
-    <nav>
+    <nav className="pt-5">
       <ul className="navlist">
         {links.map((link) => (
           <li key={link.id}>

@@ -4,6 +4,10 @@
   min-height: 100vh;
 }
 
+li {
+  list-style: none;
+}
+
 nav {
   width: 100vw;
   height: 40px;
@@ -30,4 +34,8 @@ nav {
   align-items: center;
   margin-top: 90px;
   padding-top: 50px;
+}
+
+.book-list {
+  border: 2px solid whitesmoke;
 }
