@@ -5,7 +5,6 @@ import NoBooks from './NoBooks';
 
 const BookList = () => {
   const books = useSelector((state) => state);
-  console.log(books.booksReducer);
   const booksArray = books.booksReducer;
   return (
     <div>

@@ -20,7 +20,6 @@ const AddBook = () => {
   };
 
   const handleChangecat = (e) => {
-    console.log(e.target.value);
     setState((prev) => ({
       ...prev,
       [e.target.name]: e.target.value,
@@ -35,8 +34,6 @@ const AddBook = () => {
       title,
       category,
     };
-
-    // dispatch an action and pass it the newBook object (your action's payload)
     dispatch(addBook(newBook));
     setState(() => ({
       title: '',
