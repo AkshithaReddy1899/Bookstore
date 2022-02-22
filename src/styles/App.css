@@ -36,6 +36,32 @@ nav {
   padding-top: 50px;
 }
 
+.book-list-container {
+  height: 80vh;
+  border: 1px solid grey;
+  padding: 10px;
+  overflow-y: scroll;
+}
+
 .book-list {
+  width: 600px;
   border: 2px solid whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.list-btn {
+  background-color: transparent;
+  border: none;
+  border-right: 1px solid white;
+  margin: 2px;
+  width: 80px;
+  padding-right: 5px;
+  color: wheat;
+}
+
+.title {
+  font-size: 2rem;
 }

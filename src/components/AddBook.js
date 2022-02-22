@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/books/books';
 
 const AddBook = () => {
-  const categories = ['Fiction', 'Fantasy', 'Action & Adventure', 'Mystery', 'Horror', 'Thriller', 'Biography', 'History'];
+  const categories = ['Fiction', 'Fantasy', 'Action & Adventure', 'Mystery', 'Horror', 'Thriller', 'Biography', 'History', 'Miscellaneous'];
 
   const dispatch = useDispatch();
   const [state, setState] = useState({
@@ -20,9 +20,10 @@ const AddBook = () => {
   };
 
   const handleChangecat = (e) => {
+    console.log(e.target.value);
     setState((prev) => ({
       ...prev,
-      [e.target.category]: e.target.value,
+      [e.target.name]: e.target.value,
     }));
   };
 
@@ -45,16 +46,19 @@ const AddBook = () => {
 
   return (
     <div>
-      <form onSubmit={(e) => {
-        e.preventDefault();
-        submitBookToStore();
-      }}
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          submitBookToStore();
+        }}
+        className="d-flex justify-content-between"
       >
         <div className="mb-3">
           <input type="text" className="form-control" name="title" value={state.title} onChange={handleChangeName} placeholder="Book title" required />
         </div>
         <div className="mb-3">
           <select className="form-select" name="category" value={state.category} onChange={handleChangecat}>
+            <option value="DEFAULT">category</option>
             {categories.map((cat) => (
               <option key={uuidv4()}>{cat}</option>
             ))}
