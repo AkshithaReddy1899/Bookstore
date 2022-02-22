@@ -55,10 +55,11 @@ Book.defaultProps = {
 };
 
 Book.propTypes = {
-  book: PropTypes.instanceOf(Array).isRequired,
-  id: PropTypes.number.isRequired,
-  title: PropTypes.string.isRequired,
-  category: PropTypes.string.isRequired,
+  book: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+  }).isRequired,
   author: PropTypes.string,
   percent: PropTypes.number,
   chapter: PropTypes.string,
