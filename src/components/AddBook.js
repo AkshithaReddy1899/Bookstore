@@ -57,7 +57,7 @@ const AddBook = () => {
           <input type="text" className="form-control" name="title" value={state.title} onChange={handleChangeName} placeholder="Book title" required />
         </div>
         <div className="mb-3">
-          <select className="form-select" name="category" value={state.category} onChange={handleChangecat}>
+          <select className="form-select" name="category" value={state.category} onChange={handleChangecat} required>
             <option value="DEFAULT">category</option>
             {categories.map((cat) => (
               <option key={uuidv4()}>{cat}</option>

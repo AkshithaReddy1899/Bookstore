@@ -1,7 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { removeBook } from '../redux/books/books';
 
 const Book = (props) => {
+  const dispatch = useDispatch();
   const {
     book,
     author,
@@ -22,7 +25,7 @@ const Book = (props) => {
         <small className="author">{author}</small>
         <div>
           <button type="button" className="list-btn">Comments</button>
-          <button type="button" className="list-btn">Remove</button>
+          <button type="button" className="list-btn" onClick={() => dispatch(removeBook(id))}>Remove</button>
           <button type="button" className="list-btn">Edit</button>
         </div>
       </div>
@@ -49,14 +52,13 @@ Book.defaultProps = {
   author: 'Unknown',
   percent: 0,
   chapter: 'Introduction',
-  category: 'Miscellaneous',
 };
 
 Book.propTypes = {
   book: PropTypes.instanceOf(Array).isRequired,
   id: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
-  category: PropTypes.string,
+  category: PropTypes.string.isRequired,
   author: PropTypes.string,
   percent: PropTypes.number,
   chapter: PropTypes.string,

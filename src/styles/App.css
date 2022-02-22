@@ -4,6 +4,11 @@
   min-height: 100vh;
 }
 
+::-webkit-scrollbar {
+  width: 2px;
+  background: transparent;
+}
+
 li {
   list-style: none;
 }
@@ -33,11 +38,10 @@ nav {
   justify-content: center;
   align-items: center;
   margin-top: 90px;
-  padding-top: 50px;
 }
 
 .book-list-container {
-  height: 80vh;
+  height: 60vh;
   border: 1px solid grey;
   padding: 10px;
   overflow-y: scroll;
@@ -50,6 +54,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   margin: 20px;
+  padding: 5px 15px;
 }
 
 .list-btn {
