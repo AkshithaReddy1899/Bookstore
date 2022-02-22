@@ -1,6 +1,6 @@
 # Bookstore
 
-This branch contains the fetures to add and remove a book from the list.
+This branch is the initial phase of the bookstore react-redux application. which includes basic styling using bootstrap
 
 ## Built With
 
@@ -10,7 +10,8 @@ This branch contains the fetures to add and remove a book from the list.
 
 ## Screenshot
 
-![React-App-create-remove-book](https://user-images.githubusercontent.com/70577783/155091505-e201d632-ee90-47d3-887d-efc9c48b06d9.png)
+![React-App](https://user-images.githubusercontent.com/70577783/154922147-a9042b82-08d2-46a9-97f1-1679e01df2b8.png)
+
 
 ## Getting Started
 
