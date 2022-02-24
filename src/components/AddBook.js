@@ -44,7 +44,8 @@ const AddBook = () => {
   };
 
   return (
-    <div>
+    <div className="bookform">
+      <h2>ADD NEW BOOK</h2>
       <form
         onSubmit={(e) => {
           e.preventDefault();

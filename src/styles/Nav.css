@@ -1,0 +1,24 @@
+nav {
+  width: 100vw;
+  height: 4rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  margin: 0;
+  background: #fff;
+}
+
+.navlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.navitem {
+  text-decoration: none;
+  color: #121212;
+  margin: 15px;
+}
