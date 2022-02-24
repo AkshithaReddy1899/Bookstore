@@ -1,7 +1,9 @@
+/* eslint-disable camelcase */
+
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../redux/books/books';
+import { fetchAddBooks } from '../redux/books/books';
 
 const AddBook = () => {
   const categories = ['Fiction', 'Fantasy', 'Action & Adventure', 'Mystery', 'Horror', 'Thriller', 'Biography', 'History', 'Miscellaneous'];
@@ -27,14 +29,14 @@ const AddBook = () => {
   };
 
   const submitBookToStore = () => {
-    const id = uuidv4();
+    const item_id = uuidv4();
     const { title, category } = state;
     const newBook = {
-      id,
+      item_id,
       title,
       category,
     };
-    dispatch(addBook(newBook));
+    dispatch(fetchAddBooks(newBook));
     setState(() => ({
       title: '',
       category: '',
