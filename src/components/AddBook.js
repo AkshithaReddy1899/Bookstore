@@ -1,3 +1,5 @@
+/* eslint-disable camelcase */
+
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux';
@@ -27,10 +29,10 @@ const AddBook = () => {
   };
 
   const submitBookToStore = () => {
-    const id = uuidv4();
+    const item_id = uuidv4();
     const { title, category } = state;
     const newBook = {
-      id,
+      item_id,
       title,
       category,
     };

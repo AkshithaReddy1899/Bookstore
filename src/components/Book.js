@@ -1,3 +1,5 @@
+/* eslint-disable camelcase */
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
@@ -12,20 +14,20 @@ const Book = (props) => {
     chapter,
   } = props;
   const {
-    id,
+    item_id,
     title,
     category,
   } = book;
 
   return (
-    <li className="book-list" key={id}>
+    <li className="book-list" key={item_id}>
       <div>
         <small><b className="category">{category}</b></small>
         <h6 className="title">{title}</h6>
         <small className="author">{author}</small>
         <div>
           <button type="button" className="list-btn">Comments</button>
-          <button type="button" className="list-btn" onClick={() => dispatch(removeBook(id))}>Remove</button>
+          <button type="button" className="list-btn" onClick={() => dispatch(removeBook(item_id))}>Remove</button>
           <button type="button" className="list-btn">Edit</button>
         </div>
       </div>
@@ -56,7 +58,7 @@ Book.defaultProps = {
 
 Book.propTypes = {
   book: PropTypes.shape({
-    id: PropTypes.string.isRequired,
+    item_id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     category: PropTypes.string.isRequired,
   }).isRequired,
