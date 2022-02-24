@@ -64,7 +64,17 @@ export const fetchAddBooks = (book) => async (dispatch) => {
     },
   })
     .then(() => {
-      console.log('ds');
       dispatch(addBook(book));
+    });
+};
+
+export const fetchDeleteBooks = (id) => async (dispatch) => {
+  axios.delete(`${url}/${id}`, {
+    header: {
+      'content-type': 'application/json',
+    },
+  })
+    .then(() => {
+      dispatch(removeBook(id));
     });
 };

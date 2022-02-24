@@ -3,7 +3,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/books';
+import { fetchDeleteBooks } from '../redux/books/books';
 
 const Book = (props) => {
   const dispatch = useDispatch();
@@ -27,7 +27,7 @@ const Book = (props) => {
         <small className="author">{author}</small>
         <div>
           <button type="button" className="list-btn">Comments</button>
-          <button type="button" className="list-btn" onClick={() => dispatch(removeBook(item_id))}>Remove</button>
+          <button type="button" className="list-btn" onClick={() => dispatch(fetchDeleteBooks(item_id))}>Remove</button>
           <button type="button" className="list-btn">Edit</button>
         </div>
       </div>
