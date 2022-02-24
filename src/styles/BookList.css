@@ -6,7 +6,7 @@
 }
 
 .book-list-container {
-  height: 60vh;
+  height: 45vh;
   width: 700px;
   padding: 10px;
   overflow-y: scroll;
@@ -36,7 +36,7 @@
 
 .title {
   font-size: 1.6rem;
-  color: Black;
+  color: black;
   font-weight: bold;
 }
 
@@ -82,7 +82,7 @@
 }
 
 .current p {
-  font-size: #121212;
+  color: #121212;
   font-size: 0.8rem;
 }
 
