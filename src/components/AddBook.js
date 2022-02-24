@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../redux/books/books';
+import { fetchAddBooks } from '../redux/books/books';
 
 const AddBook = () => {
   const categories = ['Fiction', 'Fantasy', 'Action & Adventure', 'Mystery', 'Horror', 'Thriller', 'Biography', 'History', 'Miscellaneous'];
@@ -36,7 +36,7 @@ const AddBook = () => {
       title,
       category,
     };
-    dispatch(addBook(newBook));
+    dispatch(fetchAddBooks(newBook));
     setState(() => ({
       title: '',
       category: '',

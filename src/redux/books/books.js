@@ -56,7 +56,7 @@ export const fetchBooks = () => async (dispatch) => {
       });
     });
 };
-/*
+
 export const fetchAddBooks = (book) => async (dispatch) => {
   axios.post(url, book, {
     header: {
@@ -68,4 +68,3 @@ export const fetchAddBooks = (book) => async (dispatch) => {
       dispatch(addBook(book));
     });
 };
-*/
