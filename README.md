@@ -1,6 +1,6 @@
 # Bookstore
 
-This branch is created to add styling to the bookstore CMS application
+Bookstore CMS is a website to manage collection of books. It is a Single Page App (SPA) that allows you to display list of books, add new book and remove a selected book.
 
 ## Built With
 
