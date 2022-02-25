@@ -4,6 +4,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { fetchDeleteBooks } from '../redux/books/books';
+import '../styles/BookList.css';
 
 const Book = (props) => {
   const dispatch = useDispatch();
@@ -31,7 +32,7 @@ const Book = (props) => {
           <button type="button" className="list-btn">Edit</button>
         </div>
       </div>
-      <div>
+      <div className="progress">
         <span className="circle" />
         <div>
           <h4 className="percentage">
@@ -41,9 +42,9 @@ const Book = (props) => {
           <small>Completed</small>
         </div>
       </div>
-      <div>
+      <div className="current">
         <p>CURRENT CHAPTER</p>
-        <p>{chapter}</p>
+        <p className="chapter">{chapter}</p>
         <button type="button">UPDATE PROGRESS</button>
       </div>
     </li>

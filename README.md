@@ -1,6 +1,6 @@
 # Bookstore
 
-This branch contains the fetures to add and remove a book from the list.
+This branch is created to add styling to the bookstore CMS application
 
 ## Built With
 
@@ -10,7 +10,7 @@ This branch contains the fetures to add and remove a book from the list.
 
 ## Screenshot
 
-![React-App-create-remove-book](https://user-images.githubusercontent.com/70577783/155091505-e201d632-ee90-47d3-887d-efc9c48b06d9.png)
+![React-App](https://user-images.githubusercontent.com/70577783/155564565-55f2978d-af00-44e4-83bf-8b6c249792c8.png)
 
 ## Getting Started
 

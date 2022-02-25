@@ -2,6 +2,7 @@ import { React, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Book from './Book';
 import NoBooks from './NoBooks';
+import '../styles/BookList.css';
 import { fetchBooks } from '../redux/books/books';
 
 const BookList = () => {

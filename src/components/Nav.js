@@ -1,40 +1,57 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import '../styles/App.css';
+import '../styles/Nav.css';
+import svg from '../styles/profile.svg';
 
 const Nav = () => {
-  const links = [
-    {
-      id: 1,
-      path: '/',
-      text: 'Bookstore CMS',
-    },
-    {
-      id: 2,
-      path: '/',
-      text: 'BOOKS',
-    },
-    {
-      id: 3,
-      path: '/Categories',
-      text: 'CATEGORIES',
-    },
-  ];
+  console.log('GI');
   return (
-    <nav className="pt-5">
+    <nav>
       <ul className="navlist">
-        {links.map((link) => (
-          <li key={link.id}>
+        <li className="navitem logo">
+          <h2>
             <NavLink
-              to={link.path}
-              className="navitem"
+              to="/"
+              style={{
+                color: '#0290ff',
+                fontSize: '2rem',
+                textDecoration: 'none',
+              }}
             >
-              {link.text}
+              Bookstore CMS
             </NavLink>
-          </li>
-        ))}
+          </h2>
+        </li>
+        <li className="navitem">
+          <NavLink
+            to="/"
+            style={{
+              color: 'black',
+              textDecoration: 'none',
+              fontSize: '0.8rem',
+              letterSpacing: '1.9px',
+            }}
+          >
+            BOOKS
+          </NavLink>
+        </li>
+        <li className="navitem">
+          <NavLink
+            to="/Categories"
+            style={{
+              color: 'black',
+              textDecoration: 'none',
+              fontSize: '0.8rem',
+              letterSpacing: '1.9px',
+            }}
+          >
+            CATEGORIES
+          </NavLink>
+        </li>
       </ul>
-      <p>Login</p>
+      <span>
+        <img src={svg} alt="profile" />
+      </span>
     </nav>
   );
 };
